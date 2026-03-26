@@ -1,0 +1,132 @@
+.hero {
+  position: relative;
+  height: min(100vh, 900px);
+  width: 100%;
+  display: flex;
+  /* Removed align-items: center to stop mathematical vertical centering */
+  justify-content: flex-start;
+  color: var(--white);
+  text-align: left;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-attachment: fixed;
+  padding-top: 15vh; /* Pushes content down explicitly based on window height */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Dramatic, lively, asymmetric gradient */
+  background: 
+    linear-gradient(to right, #0a100dc0 0%, #0a100d30 40%, #0a100dc0 100%),
+    linear-gradient(to bottom, transparent 80%, var(--bg-deep) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 var(--spacing-lg); /* Removed previous 100px padding */
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 1.05;
+  margin-bottom: 0;
+  font-weight: 900;
+  letter-spacing: -3px;
+  background: linear-gradient(to bottom, #fff 40%, rgba(255,255,255,0.7) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight {
+  /* Using your energy themes in the gradient text */
+  background: linear-gradient(135deg, var(--primary-green), var(--energy-gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 650px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  right: 50px; /* Non-asymmetric, non-standard position for better UX */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(5px);
+}
+
+.wheel {
+  width: 5px;
+  height: 5px;
+  background: var(--energy-gold);
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-wheel 2.5s infinite;
+  box-shadow: 0 0 10px var(--energy-gold);
+}
+
+@keyframes scroll-wheel {
+  0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-content {
+    align-items: center;
+    padding: 0 var(--spacing-sm);
+  }
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  .hero-overlay {
+    background: radial-gradient(circle at center, rgba(10, 26, 18, 0.6) 0%, rgba(10, 26, 18, 0.9) 100%);
+  }
+}

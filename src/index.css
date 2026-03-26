@@ -1,0 +1,175 @@
+@import './styles/variables.css';
+
+/* Reset & Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: var(--bg-deep); /* Deep Moss, not black */
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* 
+   DYNAMNIC MESH GRADIENT BACKGROUND 
+   Makes the UI feel "Lively" and Premium
+*/
+.app-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.app-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 0% 0%, var(--grad-green-glow) 0%, transparent 50%),
+    radial-gradient(circle at 100% 0%, var(--grad-orange-glow) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, var(--grad-gold-glow) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, var(--grad-green-glow) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, var(--grad-orange-glow) 0%, transparent 50%);
+  z-index: -1;
+  animation: mesh-subtle-move 20s ease-in-out infinite alternate;
+}
+
+@keyframes mesh-subtle-move {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* Glassmorphism Sections */
+.section {
+  padding: var(--spacing-xl) 0;
+  position: relative;
+}
+
+/* Typography & Global Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.03em;
+}
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Layout Utilities */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.text-center { text-align: center; }
+.text-primary { color: var(--primary-green); }
+.text-energy { color: var(--energy-orange); }
+.text-gold { color: var(--energy-gold); }
+
+.section-subtitle {
+  display: block;
+  color: var(--energy-gold);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+  line-height: 1.1;
+}
+
+/* Premium Buttons - Pillow Style with Hover Shine */
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  border-radius: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-green), #2E7D32);
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(56, 142, 60, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(56, 142, 60, 0.5);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, var(--energy-orange), #D84315);
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(255, 111, 0, 0.3);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(255, 111, 0, 0.5);
+}
+
+.btn-outline-white {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  backdrop-filter: blur(5px);
+}
+
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--white);
+}
+
+/* Premium Glass Cards */
+.premium-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  backdrop-filter: var(--glass-blur);
+  border-radius: 32px;
+  padding: var(--spacing-lg) var(--spacing-md);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-card:hover {
+  border-color: rgba(255, 193, 7, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-10px);
+}
+
+/* Utilities */
+.bg-light { background-color: rgba(255,255,255,0.02); }
+.bg-card { background-color: var(--bg-card); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mt-lg { margin-top: var(--spacing-lg); }
