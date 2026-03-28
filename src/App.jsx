@@ -9,10 +9,12 @@ import RecyclingHub from './pages/RecyclingHub'
 import Sacco from './pages/Sacco'
 import News from './pages/News'
 import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
     <div className="app-container">
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>
