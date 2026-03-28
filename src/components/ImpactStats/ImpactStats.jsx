@@ -1,65 +1,22 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import './ImpactStats.css';
-
-const Counter = ({ target, duration, suffix = "" }) => {
-  const [count, setCount] = useState(0);
-  const countRef = useRef(null);
-  const [hasStarted, setHasStarted] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setHasStarted(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (countRef.current) {
-      observer.observe(countRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!hasStarted) return;
-
-    let start = 0;
-    const end = parseInt(target);
-    const stepTime = Math.abs(Math.floor(duration / end));
-    
-    const timer = setInterval(() => {
-      start += 1;
-      setCount(start);
-      if (start === end) clearInterval(timer);
-    }, stepTime);
-
-    return () => clearInterval(timer);
-  }, [hasStarted, target, duration]);
-
-  return <span ref={countRef}>{count}{suffix}</span>;
-}
 
 const ImpactStats = () => {
   const stats = [
-    { label: "Tons of Waste Processed", target: "5000", suffix: "+", icon: "🗑️" },
-    { label: "Community Members Supported", target: "1200", suffix: "+", icon: "👥" },
-    { label: "Energy Produced (MWh)", target: "500", suffix: "+", icon: "⚡" },
-    { label: "CO2 Emissions Reduced", target: "850", suffix: " Tons", icon: "🌍" }
+    { target: "10,000+", label: "Tons of Waste Processed" },
+    { target: "500+", label: "Waste Workers Supported" },
+    { target: "3+", label: "Circular Systems" },
+    { target: "3+", label: "SACCO Support" }
   ];
 
   return (
     <section className="impact-stats section">
       <div className="container">
+        <h2 className="section-title text-center text-white">Our Impact</h2>
         <div className="stats-grid">
           {stats.map((stat, index) => (
             <div className="stat-card" key={index}>
-              <div className="stat-icon">{stat.icon}</div>
-              <h2 className="stat-number">
-                <Counter target={stat.target} duration={2000} suffix={stat.suffix} />
-              </h2>
+              <h2 className="stat-number">{stat.target}</h2>
               <p className="stat-label">{stat.label}</p>
             </div>
           ))}

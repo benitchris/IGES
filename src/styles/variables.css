@@ -1,38 +1,38 @@
 :root {
   /* Brand Colors - Premium Sustainable Palette */
-  --primary-green: #388E3C;
-  --deep-green: #0a2f1c; /* Sophisticated dark forest */
-  --energy-orange: #FF6F00; /* Vibrant energy */
-  --energy-gold: #FFC107; /* From MTSL branding */
+  --primary-green: #116038;
+  --deep-green: #0a4023; 
+  --energy-orange: #e55e00; 
+  --energy-gold: #e55e00; 
   --eco-blue: #00796B;
   
-  /* Lively Gradient Background Tokens */
-  --bg-deep: #06110b; /* Deep moss, not black */
-  --grad-green-glow: rgba(56, 142, 60, 0.15);
-  --grad-gold-glow: rgba(255, 193, 7, 0.05);
-  --grad-orange-glow: rgba(255, 111, 0, 0.08);
+  /* Background Tokens */
+  --bg-deep: #ffffff; 
+  --bg-light: #ffffff;
+  --grad-green-glow: rgba(17, 96, 56, 0.05);
 
   /* Neutrals */
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --glass-bg: rgba(10, 26, 18, 0.8);
-  --text-main: #f0f4f1;
-  --text-muted: #a0acab;
-  --border-color: rgba(255, 255, 255, 0.08);
+  --bg-card: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --text-main: #222222;
+  --text-muted: #555555;
+  --text-light: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.08);
 
   /* Typography */
-  --font-headings: 'Poppins', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-headings: 'Montserrat', sans-serif;
+  --font-body: 'Source Sans 3', sans-serif;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
-  --spacing-xl: 8rem;
+  --spacing-xl: 6rem;
 
   /* Effects */
-  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.08);
   --glass-blur: blur(16px);
-  --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

@@ -8,13 +8,13 @@ const Hero = () => {
     <section className="hero" id="home" style={{ backgroundImage: `url(${buyalaFacility})` }}>
       <div className="hero-overlay"></div>
       <div className="container hero-content">
-        <h1 className="hero-title">Turning Waste into <span className="highlight">Sustainable Energy</span> Solutions</h1>
+        <h1 className="hero-title">Transforming Waste<br />into Sustainable Energy</h1>
         <p className="hero-subtitle">
-          IGES – Integrated Green Energy Solutions, innovating for a cleaner, greener Uganda.
+          IGES under MTSL Energies Limited working with key institutions including Kampala Capital City Authority (KCCA) and Makerere University to drive innovative
         </p>
         <div className="hero-ctas">
-          <Link to="/about" className="btn btn-primary">Learn More</Link>
-          <Link to="/contact" className="btn btn-outline-white">Join Our Efforts</Link>
+          <Link to="/technology" className="btn btn-primary">Explore Our Solutions</Link>
+          <Link to="/contact" className="btn btn-secondary">Partner With Us</Link>
         </div>
       </div>
       

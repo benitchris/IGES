@@ -1,24 +1,24 @@
-import React from 'react'
-import Hero from '../components/Hero/Hero'
-import AboutSnapshot from '../components/AboutSnapshot/AboutSnapshot'
-import TechIntro from '../components/TechIntro/TechIntro'
-import ImpactStats from '../components/ImpactStats/ImpactStats'
-import RecyclingHubSnippet from '../components/RecyclingHubSnippet/RecyclingHubSnippet'
-import SaccoSnippet from '../components/SaccoSnippet/SaccoSnippet'
-import NewsSnippet from '../components/NewsSnippet/NewsSnippet'
+import React from 'react';
+import Hero from '../components/Hero/Hero';
+import PartnerLogos from '../components/PartnerLogos/PartnerLogos';
+import KeyFocusAreas from '../components/KeyFocusAreas/KeyFocusAreas';
+import AboutSnapshot from '../components/AboutSnapshot/AboutSnapshot';
+import SolutionsSection from '../components/SolutionsSection/SolutionsSection';
+import ImpactStats from '../components/ImpactStats/ImpactStats';
+import CallToAction from '../components/CallToAction/CallToAction';
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <PartnerLogos />
+      <KeyFocusAreas />
       <AboutSnapshot />
-      <TechIntro />
+      <SolutionsSection />
       <ImpactStats />
-      <RecyclingHubSnippet />
-      <SaccoSnippet />
-      <NewsSnippet />
+      <CallToAction />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

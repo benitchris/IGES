@@ -48,9 +48,6 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
-            <li>
-              <Link to="/contact" className="nav-cta">Get Started</Link>
-            </li>
           </ul>
 
           <button 
@@ -79,7 +76,6 @@ const Navbar = () => {
               {link.label}
             </NavLink>
           ))}
-          <Link to="/contact" className="drawer-cta" onClick={closeMenu}>Get Started</Link>
         </div>
       </div>
 
