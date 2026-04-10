@@ -3,16 +3,18 @@ import './ImpactStats.css';
 
 const ImpactStats = () => {
   const stats = [
-    { target: "10,000+", label: "Tons of Waste Processed" },
-    { target: "500+", label: "Waste Workers Supported" },
-    { target: "3+", label: "Circular Systems" },
-    { target: "3+", label: "SACCO Support" }
+    { target: "250+", label: "Tons of Waste Processed" },
+    { target: "120+", label: "Community Members Supported" },
+    { target: "50+", label: "Energy Units Produced" }
   ];
 
   return (
     <section className="impact-stats section">
       <div className="container">
-        <h2 className="section-title text-center text-white">Our Impact</h2>
+        <div className="text-center mb-lg">
+          <span className="section-subtitle" style={{color: 'rgba(255,255,255,0.7)'}}>Our Impact So Far</span>
+          <h2 className="section-title text-white">Making a Difference</h2>
+        </div>
         <div className="stats-grid">
           {stats.map((stat, index) => (
             <div className="stat-card" key={index}>

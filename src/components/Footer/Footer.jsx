@@ -1,41 +1,68 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import igesLogo from '../../assets/logos/IGES LOGO DRAFT141827022025.png';
+import kccaLogo from '../../assets/logos/kcca-logo.png';
+import makerereLogo from '../../assets/logos/makerere-logo.svg';
 import mtslLogo from '../../assets/logos/mtsl-logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container footer-grid">
-        <div className="footer-col">
-          <h4>Quick Links</h4>
-          <div className="footer-logo-block">
-            <img src={mtslLogo} alt="MTSL Energies" className="footer-mtsl" />
+      <div className="container">
+        <div className="footer-grid">
+          {/* Column 1: Quick Links */}
+          <div className="footer-col">
+            <div className="footer-about">
+              <img src={igesLogo} alt="IGES Logo" className="footer-logo" />
+              <p>Integrated Green Energy Solutions (IGES) is transforming organic waste into clean energy.</p>
+            </div>
+            <ul className="footer-links">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/technology">Technology</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 2: Social Media */}
+          <div className="footer-col">
+            <h4>Follow Us</h4>
+            <div className="footer-socials">
+              <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+            </div>
+            <div className="footer-contact-minimal">
+              <p>+256 700 103-446</p>
+              <p>whoorigpei@gmail.com</p>
+            </div>
+          </div>
+
+          {/* Column 3: Newsletter */}
+          <div className="footer-col">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to our newsletter for the latest updates.</p>
+            <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit" className="btn-newsletter">Join</button>
+            </form>
+          </div>
+
+          {/* Column 4: Partner Logos */}
+          <div className="footer-col">
+            <h4>Our Partners</h4>
+            <div className="footer-partners">
+              <img src={makerereLogo} alt="Makerere University" />
+              <img src={kccaLogo} alt="KCCA" />
+              <img src={mtslLogo} alt="MTSL" />
+            </div>
           </div>
         </div>
 
-        <div className="footer-col">
-          <h4>About Us</h4>
-          <div className="footer-logo-block">
-            <h3 className="kcca-footer-text">KCCA</h3>
-          </div>
-        </div>
-
-        <div className="footer-col">
-          <h4>Contact Us</h4>
-          <div className="footer-logo-block">
-            <h3 className="makerere-footer-text">Makerere<br/><span>University</span></h3>
-          </div>
-          <ul className="footer-contact-info">
-            <li><i className="fas fa-phone"></i> +256 700 103-446</li>
-            <li><i className="fas fa-envelope"></i> whoorigpei@gmail.com</li>
-          </ul>
-          <div className="footer-socials">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-linkedin-in"></i></a>
-          </div>
+        <div className="footer-bottom">
+          <p>&copy; {new Date().getFullYear()} Integrated Green Energy Solutions (IGES). All Rights Reserved.</p>
         </div>
       </div>
     </footer>

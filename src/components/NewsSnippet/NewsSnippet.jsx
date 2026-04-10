@@ -7,24 +7,24 @@ const NewsSnippet = () => {
   const posts = [
     {
       id: 1,
-      title: "Sustainable Waste Management Partnership with KCCA",
-      date: "Oct 12, 2025",
-      excerpt: "IGES hosted KCCA officials to discuss the future of waste-to-energy in Kampala...",
-      category: "Press Release"
+      title: "New Recycling Initiative Launch",
+      date: "Mar 10, 2026",
+      excerpt: "Expanding our sorting capacities to include more plastic and metallic recyclables...",
+      category: "Initiative"
     },
     {
       id: 2,
-      title: "Impact of HTT on Local Energy Production",
-      date: "Sep 28, 2025",
-      excerpt: "A deep dive into how hydrothermal technology is changing the energy landscape...",
-      category: "Technology"
+      title: "Community Training Workshop",
+      date: "Feb 22, 2026",
+      excerpt: "Empowering local waste workers with modern safety and processing techniques...",
+      category: "Workshop"
     },
     {
       id: 3,
-      title: "Community Spotlight: The Buyala Waste Workers",
-      date: "Sep 15, 2025",
-      excerpt: "Meet the people behind the success of our recycling hub and SACCO...",
-      category: "Community"
+      title: "HTT Research Partnership Update",
+      date: "Jan 15, 2026",
+      excerpt: "Deepening our collaboration with Makerere University on hydrothermal research...",
+      category: "Research"
     }
   ];
 
@@ -32,8 +32,8 @@ const NewsSnippet = () => {
     <section className="news-snippet section" id="news">
       <div className="container">
         <div className="text-center mb-lg">
-          <span className="section-subtitle">Stay Informed</span>
-          <h2 className="section-title">Latest News & <span className="text-primary">Press</span></h2>
+          <span className="section-subtitle">Latest Updates</span>
+          <h2 className="section-title">News & <span className="text-primary">Announcements</span></h2>
         </div>
 
         <div className="news-grid">

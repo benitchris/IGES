@@ -25,6 +25,7 @@ const Navbar = () => {
     { to: '/recycling', label: 'Recycling Hub' },
     { to: '/sacco', label: 'SACCO' },
     { to: '/news', label: 'News' },
+    { to: '/contact', label: 'Contact' },
   ];
 
   return (

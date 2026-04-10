@@ -14,142 +14,60 @@ html {
 body {
   font-family: var(--font-body);
   color: var(--text-main);
-  background-color: var(--bg-deep); /* Deep Moss, not black */
+  background-color: #f8faf9; 
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
-/* 
-   DYNAMNIC MESH GRADIENT BACKGROUND 
-   Makes the UI feel "Lively" and Premium
-*/
-.app-container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  z-index: 1;
-  background-color: var(--bg-deep);
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Glassmorphism Sections */
+.reveal {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Sections */
 .section {
-  padding: var(--spacing-xl) 0;
+  padding: 6rem 0;
   position: relative;
 }
 
-/* Typography & Global Styles */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-headings);
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: var(--spacing-sm);
-  letter-spacing: -0.01em;
+/* Higher contrast background for cards */
+.bg-light { 
+  background-color: #f0f4f2; 
 }
 
-a { text-decoration: none; color: inherit; transition: var(--transition); }
-ul { list-style: none; }
-img { max-width: 100%; height: auto; display: block; }
-
-/* Layout Utilities */
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
-.text-center { text-align: center; }
-.text-primary { color: var(--primary-green); }
-.text-energy { color: var(--energy-orange); }
-.text-gold { color: var(--energy-gold); }
-
-.section-subtitle {
-  display: block;
-  color: var(--energy-gold);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.section-title {
-  font-size: clamp(2.2rem, 5vw, 3rem);
-  margin-bottom: var(--spacing-md);
-  color: var(--deep-green);
-  line-height: 1.2;
-}
-
-/* Premium Buttons - Pillow Style with Hover Shine */
-.btn {
-  display: inline-block;
-  padding: 16px 36px;
-  border-radius: 100px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 0.85rem;
+.premium-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 32px;
+  padding: 3rem 2rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background: var(--primary-green);
-  color: var(--text-light);
-  box-shadow: 0 4px 10px rgba(17, 96, 56, 0.2);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(17, 96, 56, 0.3);
-}
-
-.btn-secondary {
-  background: var(--energy-orange);
-  color: var(--text-light);
-  box-shadow: 0 4px 10px rgba(229, 94, 0, 0.2);
-}
-
-.btn-secondary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(229, 94, 0, 0.3);
-}
-
-.btn-outline-white {
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--text-main);
-  border: none;
   box-shadow: var(--shadow-sm);
 }
 
-.btn-outline-white:hover {
-  background: #ffffff;
-  color: var(--primary-green);
-}
-
-/* Premium Glass Cards */
-.premium-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  backdrop-filter: var(--glass-blur);
-  border-radius: 32px;
-  padding: var(--spacing-lg) var(--spacing-md);
-  transition: var(--transition);
-  position: relative;
-  overflow: hidden;
-}
-
 .premium-card:hover {
-  border-color: rgba(255, 193, 7, 0.3);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary-green);
   transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
 }
 
-/* Utilities */
-.bg-light { background-color: rgba(255,255,255,0.02); }
-.bg-card { background-color: var(--bg-card); }
-.mb-lg { margin-bottom: var(--spacing-lg); }
-.mt-lg { margin-top: var(--spacing-lg); }
+.max-w-md { max-width: 800px; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.w-full { width: 100%; }
+.mb-sm { margin-bottom: 1.5rem; }
+.mb-md { margin-bottom: 2.5rem; }
+.mb-lg { margin-bottom: 4rem; }
+.mt-lg { margin-top: 4rem; }

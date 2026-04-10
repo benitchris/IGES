@@ -1,0 +1,76 @@
+.sacco-section {
+  padding: 6rem 0;
+}
+
+.sacco-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.sacco-image {
+  position: relative;
+}
+
+.sacco-image img {
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: var(--shadow-lg);
+}
+
+.sacco-stats {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+}
+
+.stat-pill {
+  background: var(--energy-orange);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(244, 81, 30, 0.3);
+}
+
+.pill-num {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pill-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.sacco-content .section-title {
+  margin-bottom: 1.5rem;
+}
+
+.sacco-content p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  .sacco-row {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .sacco-stats {
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sacco-section {
+    padding: 4rem 0;
+  }
+}
