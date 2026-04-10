@@ -142,10 +142,6 @@
 @media (max-width: 1100px) {
   .navbar-toggle {
     display: flex;
-    position: absolute;
-    right: 80px; /* Shifting even further left for high visibility */
-    top: 50%;
-    transform: translateY(-50%);
   }
   
   .navbar {
