@@ -50,13 +50,12 @@ const Footer = () => {
             </form>
           </div>
 
-          {/* Column 4: Partner Logos */}
           <div className="footer-col">
-            <h4>Our Partners</h4>
+            <h4 className="footer-title">Our Partners</h4>
             <div className="footer-partners">
-              <img src={makerereLogo} alt="Makerere University" />
-              <img src={kccaLogo} alt="KCCA" />
-              <img src={mtslLogo} alt="MTSL" />
+              <img src={makerereLogo} alt="Makerere University" className="partner-logo" />
+              <img src={kccaLogo} alt="KCCA" className="partner-logo" />
+              <img src={mtslLogo} alt="MTSL" className="partner-logo" />
             </div>
           </div>
         </div>

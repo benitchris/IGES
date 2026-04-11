@@ -14,15 +14,10 @@
 }
 
 .footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.footer-logo-img {
-  height: 50px;
+  height: 45px;
   width: auto;
+  margin-bottom: 1.5rem;
+  display: block;
 }
 
 .footer-logo-text {
@@ -99,15 +94,30 @@
   gap: 1.5rem;
 }
 
-.social-links a {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.25rem;
-  transition: var(--transition);
-}
-
 .social-links a:hover {
   color: white;
   transform: translateY(-3px);
+}
+
+.footer-partners {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.partner-logo {
+  max-height: 40px;
+  width: auto;
+  filter: grayscale(1) brightness(4);
+  opacity: 0.6;
+  transition: var(--transition);
+}
+
+.partner-logo:hover {
+  filter: none;
+  opacity: 1;
 }
 
 @media (max-width: 1200px) {
