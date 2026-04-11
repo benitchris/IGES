@@ -1,48 +1,60 @@
 .solutions-section {
-  background-color: var(--bg-light);
+  background: var(--bg-light);
+  position: relative;
   padding: 5rem 0;
 }
 
 .solutions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
 }
 
 .solution-card {
   background: var(--bg-card);
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+  border: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
 }
 
 .solution-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-15px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--accent-green);
 }
 
 .solution-image {
   width: 100%;
-  height: 220px;
+  height: 280px;
   object-fit: cover;
-  border-bottom: 2px solid var(--primary-green);
+  transition: var(--transition);
+}
+
+.solution-card:hover .solution-image {
+  transform: scale(1.05);
 }
 
 .solution-content {
-  padding: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .solution-content h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--text-main);
-  margin-bottom: 1.5rem;
+  margin: 0;
+  font-family: var(--font-headings);
+  font-weight: 700;
 }
 
 .solution-btn {

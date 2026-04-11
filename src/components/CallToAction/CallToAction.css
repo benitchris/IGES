@@ -1,18 +1,28 @@
 .cta-section {
-  background-color: #ffffff;
-  padding: 6rem 0;
+  background: var(--bg-light);
+  padding: var(--spacing-xl) 0;
   text-align: center;
-  border-bottom: 2px solid var(--primary-green);
+  position: relative;
 }
 
 .cta-title {
-  color: var(--text-main);
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-green);
+  font-family: var(--font-headings);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.cta-desc {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  color: var(--text-muted);
+  line-height: 1.6;
 }
 
 .cta-btn {
   font-size: 1.1rem;
-  padding: 14px 40px;
+  padding: 1.25rem 4rem;
 }

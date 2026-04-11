@@ -18,13 +18,12 @@ const Technology = () => {
 
   return (
     <div className="tech-page">
-      <section className="internal-hero section" style={{ backgroundImage: `url(${techHero})`, backgroundSize: 'cover', backgroundPosition: 'center', color: '#fff', position: 'relative' }}>
-        <div className="hero-overlay" style={{background: 'rgba(0,0,0,0.6)', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0}}></div>
-        <div className="container hero-content" style={{position: 'relative', zIndex: 2}}>
-             <span className="section-subtitle" style={{color: 'var(--energy-orange)'}}>Future of Energy</span>
-             <h1 className="section-title text-white">Hydrothermal Technology (HTT)</h1>
-             <p className="section-desc" style={{color: '#eee', maxWidth: '600px'}}>
-                Hydrothermal Technology is an advanced waste-processing system that converts organic waste into energy through heat and pressure treatment.
+      <section className="internal-hero section bg-dark">
+        <div className="hero-overlay"></div>
+        <div className="container hero-content">
+             <h1 className="hero-title reveal">Hydrothermal Technology (HTT)</h1>
+             <p className="hero-subtitle reveal">
+                Transforming organic waste into high-value energy through advanced heat and pressure treatment systems.
              </p>
         </div>
       </section>

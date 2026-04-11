@@ -8,13 +8,16 @@ const Hero = () => {
     <section className="hero" id="home" style={{ backgroundImage: `url(${buyalaFacility})` }}>
       <div className="hero-overlay"></div>
       <div className="container hero-content">
-        <h1 className="hero-title">Turning Waste into<br /><span className="text-secondary">Sustainable Energy</span> Solutions</h1>
-        <p className="hero-subtitle">
-          IGES – Integrated Green Energy Solutions is transforming organic waste into clean energy and empowering communities through innovative recycling systems.
+        <h1 className="hero-title reveal">
+          Transforming Waste into <br />
+          <span className="text-accent">Sustainable Energy</span>
+        </h1>
+        <p className="hero-subtitle reveal">
+          IGES under MTSL Energies Limited working with key institutions including Kampala Capital City Authority (KCCA) and Makerere University to drive innovative waste management solutions in Uganda.
         </p>
-        <div className="hero-ctas">
-          <Link to="/about" className="btn btn-primary">Learn More</Link>
-          <Link to="/contact" className="btn btn-secondary">Join Our Efforts</Link>
+        <div className="hero-ctas reveal">
+          <Link to="/technology" className="btn btn-primary">Explore Our Solutions</Link>
+          <Link to="/contact" className="btn btn-secondary">Partner With Us</Link>
         </div>
       </div>
       
@@ -22,9 +25,6 @@ const Hero = () => {
       <div className="scroll-indicator">
         <div className="mouse">
           <div className="wheel"></div>
-        </div>
-        <div className="scroll-arrows">
-          <span className="arrow-down"></span>
         </div>
       </div>
     </section>

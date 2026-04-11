@@ -1,38 +1,46 @@
 :root {
   /* Brand Colors - Premium Sustainable Palette */
-  --primary-green: #4CAF50;
-  --deep-green: #2E7D32; 
-  --energy-orange: #F4511E; 
-  --energy-gold: #F4511E; 
+  --primary-green: #004D2C;      /* Deep Forest Green */
+  --accent-green: #2E7D32;       /* Vibrant Leaf Green */
+  --energy-orange: #E65100;      /* Bold Energy Orange */
   --eco-blue: #00796B;
   
   /* Background Tokens */
-  --bg-deep: #ffffff; 
-  --bg-light: #ffffff;
-  --grad-green-glow: rgba(17, 96, 56, 0.05);
+  --bg-deep: #004D2C; 
+  --bg-light: #F8FAF9;           /* Soft green-tinted white */
+  --bg-card: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.90);
+  
+  /* Gradation & Effects */
+  --grad-linear: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+  --grad-orange: linear-gradient(135deg, #FF6D00 0%, #E65100 100%);
+  --grad-hero: linear-gradient(to bottom, rgba(0, 77, 44, 0.4), rgba(0, 0, 0, 0.8));
+  --grad-glow: radial-gradient(circle at 50% -20%, rgba(46, 125, 50, 0.1), transparent 70%);
 
   /* Neutrals */
-  --bg-card: #ffffff;
-  --glass-bg: rgba(255, 255, 255, 0.95);
-  --text-main: #222222;
-  --text-muted: #555555;
+  --text-main: #1A1A1A;
+  --text-muted: #4A4A4A;
   --text-light: #ffffff;
-  --border-color: rgba(0, 0, 0, 0.08);
+  --border-color: rgba(0, 77, 44, 0.08);
 
   /* Typography */
-  --font-headings: 'Montserrat', sans-serif;
-  --font-body: 'Source Sans 3', sans-serif;
+  --font-headings: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
 
   /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
-  --spacing-xl: 6rem;
+  --spacing-xs: 0.75rem;
+  --spacing-sm: 1.25rem;
+  --spacing-md: 2.5rem;
+  --spacing-lg: 5rem;
+  --spacing-xl: 8rem;
 
   /* Effects */
-  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --glass-blur: blur(16px);
-  --transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow-sm: 0 4px 12px rgba(0, 77, 44, 0.05);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px rgba(0, 77, 44, 0.12);
+  --glass-blur: blur(20px);
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
 }

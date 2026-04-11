@@ -8,16 +8,17 @@ import SaccoSection from '../components/SaccoSection/SaccoSection';
 import ImpactStats from '../components/ImpactStats/ImpactStats';
 import NewsSnippet from '../components/NewsSnippet/NewsSnippet';
 import CallToAction from '../components/CallToAction/CallToAction';
+import KeyFocusAreas from '../components/KeyFocusAreas/KeyFocusAreas';
+import SolutionsSection from '../components/SolutionsSection/SolutionsSection';
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <AboutSnapshot />
       <PartnerLogos />
-      <TechPreview />
-      <HubHighlight />
-      <SaccoSection />
+      <KeyFocusAreas />
+      <AboutSnapshot />
+      <SolutionsSection />
       <ImpactStats />
       <NewsSnippet />
       <CallToAction />

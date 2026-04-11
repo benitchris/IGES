@@ -20,13 +20,13 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <section className="internal-hero section">
-        <div className="container">
-          <span className="section-subtitle">Our Journey</span>
-          <h1 className="section-title">Rooted in <span className="text-primary">Sustainability</span> and Community</h1>
-          <p className="section-desc">
-            Integrated Green Energy Solutions (IGES) is a sustainability-driven organization dedicated to revolutionizing waste management and renewable energy generation in Uganda.
-          </p>
+      <section className="internal-hero section bg-dark">
+        <div className="hero-overlay"></div>
+        <div className="container hero-content">
+             <h1 className="hero-title reveal">About IGES</h1>
+             <p className="hero-subtitle reveal">
+                Driving sustainable innovation in waste management and renewable energy for a cleaner Uganda.
+             </p>
         </div>
       </section>
 
