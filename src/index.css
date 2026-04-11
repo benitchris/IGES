@@ -13,6 +13,25 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 77, 44, 0.2);
+  border-radius: 10px;
+  border: 3px solid var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-green);
+}
+
 body {
   font-family: var(--font-body);
   color: var(--text-main);
@@ -42,7 +61,14 @@ h1, h2, h3, h4, .font-heading {
 
 .reveal {
   opacity: 0;
-  animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  transform: translateY(40px) scale(0.98);
+  transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 /* Sections & Backgrounds */

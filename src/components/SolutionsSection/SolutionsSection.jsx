@@ -27,14 +27,19 @@ const SolutionsSection = () => {
   return (
     <section className="solutions-section section" id="solutions">
       <div className="container">
-        <h2 className="section-title text-center">Our Solutions</h2>
+        <div className="text-center mb-lg reveal">
+          <h2 className="section-title">Our Specialized Solutions</h2>
+        </div>
         <div className="solutions-grid">
           {cards.map((card, idx) => (
-            <div key={idx} className="solution-card">
-              <img src={card.image} alt={card.title} className="solution-image" />
+            <div key={idx} className="solution-card reveal" style={{ animationDelay: `${idx * 0.1}s` }}>
+              <div className="solution-image-container">
+                <img src={card.image} alt={card.title} className="solution-image" />
+                <div className="solution-overlay"></div>
+              </div>
               <div className="solution-content">
                 <h3>{card.title}</h3>
-                <Link to={card.link} className="btn btn-primary solution-btn">Learn More</Link>
+                <Link to={card.link} className="btn btn-primary solution-btn btn-animated">Learn More</Link>
               </div>
             </div>
           ))}

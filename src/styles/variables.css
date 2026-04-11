@@ -33,6 +33,7 @@
   --spacing-md: 2.5rem;
   --spacing-lg: 5rem;
   --spacing-xl: 8rem;
+  --spacing-xxl: 12rem;
 
   /* Effects */
   --shadow-sm: 0 4px 12px rgba(0, 77, 44, 0.05);
