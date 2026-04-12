@@ -62,18 +62,18 @@ const Contact = () => {
                <div className="info-block">
                   <div className="info-icon"><i className="fas fa-phone-alt"></i></div>
                   <h4>Contact Details</h4>
-                  <p><strong>Phone:</strong> +256 700 103-446</p>
-                  <p><strong>Email:</strong> whoorigpei@gmail.com</p>
+                  <p><strong>Phone:</strong> +256 786 670 044</p>
+                  <p><strong>Email:</strong> intergratedgreens@gmail.com</p>
                </div>
 
                <div className="info-block">
                   <div className="info-icon"><i className="fas fa-share-alt"></i></div>
                   <h4>Follow Us</h4>
                   <div className="footer-socials">
+                     <a href="https://www.linkedin.com/in/intergrated-green-energy-solution-a23903402/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                     <a href="https://x.com/IGEsltd" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
                      <a href="#"><i className="fab fa-facebook-f"></i></a>
-                     <a href="#"><i className="fab fa-twitter"></i></a>
                      <a href="#"><i className="fab fa-instagram"></i></a>
-                     <a href="#"><i className="fab fa-linkedin-in"></i></a>
                   </div>
                </div>
             </div>

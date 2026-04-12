@@ -29,14 +29,14 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Follow Us</h4>
             <div className="footer-socials">
+              <a href="https://www.linkedin.com/in/intergrated-green-energy-solution-a23903402/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://x.com/IGEsltd" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
               <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
               <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
             </div>
             <div className="footer-contact-minimal">
-              <p>+256 700 103-446</p>
-              <p>whoorigpei@gmail.com</p>
+              <p>+256 786 670 044</p>
+              <p>intergratedgreens@gmail.com</p>
             </div>
           </div>
 
