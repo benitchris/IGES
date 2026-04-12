@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PageHero from '../components/PageHero/PageHero';
 import './Contact.css';
 import contactHero from '../assets/images/buyala-facility.webp';
-
+const Contact = () => {
    const [formData, setFormData] = useState({
      name: '',
      email: '',
