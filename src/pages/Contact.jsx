@@ -20,7 +20,7 @@ const Contact = () => {
      setStatus('sending');
 
      const botToken = '8744569472:AAGqLJZDVeKrgJJnrU4In-oZV3vdj7bbKhE';
-     const chatId = 'YOUR_CHAT_ID'; // Replace with your Chat ID
+     const chatId = '8445187460'; // Your verified Chat ID
      
      const text = `📬 New Message from IGES Website:\n\n👤 Name: ${formData.name}\n📧 Email: ${formData.email}\n📞 Phone: ${formData.phone}\n💬 Message: ${formData.message}`;
 
