@@ -248,6 +248,27 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.form-status {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.form-status.success {
+  background: rgba(0, 77, 44, 0.1);
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+}
+
+.form-status.error {
+  background: rgba(230, 81, 0, 0.1);
+  color: var(--energy-orange);
+  border: 1px solid var(--energy-orange);
+}
+
 @media (max-width: 1024px) {
   .contact-info-overlay {
     flex-direction: column;
