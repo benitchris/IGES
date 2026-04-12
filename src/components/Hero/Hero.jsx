@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import buyalaFacility from '../../assets/images/buyala-facility.JPG';
+import buyalaFacility from '../../assets/images/buyala-facility.webp';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);

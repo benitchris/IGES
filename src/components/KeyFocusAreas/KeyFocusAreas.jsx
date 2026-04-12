@@ -10,12 +10,15 @@ const KeyFocusAreas = () => {
   ];
 
   return (
-    <section className="key-focus section" style={{ backgroundColor: '#ffffff' }}>
+    <section className="key-focus section">
       <div className="container">
-        <h2 className="section-title text-center" style={{ color: '#116038' }}>Our Key Focus Areas</h2>
+        <div className="section-header text-center mb-lg">
+          <span className="section-subtitle">Our Impact</span>
+          <h2 className="section-title orange-strick">Our Key <span className="text-secondary">Focus Areas</span></h2>
+        </div>
         <div className="focus-grid">
           {areas.map((area, index) => (
-            <div key={index} className="focus-card">
+            <div key={index} className="focus-card reveal active">
               <div className="focus-icon">
                 <i className={`fas ${area.icon}`}></i>
               </div>

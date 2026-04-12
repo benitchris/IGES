@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './HubHighlight.css';
-import hubImage from '../../assets/images/dumpisite-with-people-on-site.JPG';
+import hubImage from '../../assets/images/dumpisite-with-people-on-site.webp';
 
 const HubHighlight = () => {
   return (

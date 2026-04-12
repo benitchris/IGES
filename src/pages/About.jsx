@@ -1,8 +1,10 @@
 import React from 'react';
-import groupPhoto from '../assets/images/MTSL-people-talking-on-office.JPG';
-import kccaLogo from '../assets/logos/kcca-logo.png';
+import PageHero from '../components/PageHero/PageHero';
+import './About.css';
+import groupPhoto from '../assets/images/MTSL-people-talking-on-office.webp';
+import kccaLogo from '../assets/logos/kcca-logo.webp';
 import makerereLogo from '../assets/logos/makerere-logo.svg';
-import mtslLogo from '../assets/logos/mtsl-logo.png';
+import mtslLogo from '../assets/logos/mtsl-logo.webp';
 
 const About = () => {
   const milestones = [
@@ -20,28 +22,25 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <section className="internal-hero section bg-dark">
-        <div className="hero-overlay"></div>
-        <div className="container hero-content">
-             <h1 className="hero-title reveal">About IGES</h1>
-             <p className="hero-subtitle reveal">
-                Driving sustainable innovation in waste management and renewable energy for a cleaner Uganda.
-             </p>
-        </div>
-      </section>
+      <PageHero 
+        title="About IGES"
+        subtitle="Driving sustainable innovation in waste management and renewable energy for a cleaner Uganda."
+        backgroundImage={groupPhoto}
+        accentText="IGES"
+      />
 
       <section className="mission-vision section bg-light">
         <div className="container">
-          <div className="stats-grid">
-            <div className="premium-card">
+          <div className="mission-vision-grid">
+            <div className="premium-card reveal active">
               <div className="stat-icon">🎯</div>
-              <h3 style={{color: 'var(--primary-green)', marginBottom: '1rem'}}>Our Mission</h3>
-              <p style={{fontSize: '1.1rem'}}>To create sustainable waste-to-energy solutions that improve environmental health and empower communities.</p>
+              <h3>Our Mission</h3>
+              <p>To create sustainable waste-to-energy solutions that improve environmental health and empower communities.</p>
             </div>
-            <div className="premium-card">
+            <div className="premium-card reveal active">
               <div className="stat-icon">👁️</div>
-              <h3 style={{color: 'var(--energy-orange)', marginBottom: '1rem'}}>Our Vision</h3>
-              <p style={{fontSize: '1.1rem'}}>To become Africa’s leading innovator in green energy and waste transformation.</p>
+              <h3 className="text-orange">Our Vision</h3>
+              <p>To become Africa’s leading innovator in green energy and waste transformation.</p>
             </div>
           </div>
         </div>
@@ -80,8 +79,8 @@ const About = () => {
                    <div className="avatar-placeholder">{member.name[0]}</div>
                 </div>
                 <h3>{member.name}</h3>
-                <h4 style={{color: 'var(--energy-orange)', marginBottom: '1rem'}}>{member.pos}</h4>
-                <p style={{fontSize: '0.9rem', color: 'var(--text-muted)'}}>{member.bio}</p>
+                <h4 className="member-pos">{member.pos}</h4>
+                <p className="member-bio">{member.bio}</p>
               </div>
             ))}
           </div>
@@ -91,10 +90,10 @@ const About = () => {
       <section className="partners-section section text-center">
         <div className="container">
           <h2 className="section-title mb-lg">Our Strategic <span className="text-primary">Partners</span></h2>
-          <div className="footer-partners" style={{justifyContent: 'center', gap: '4rem'}}>
-            <img src={makerereLogo} alt="Makerere University" style={{height: '80px'}} />
-            <img src={kccaLogo} alt="KCCA" style={{height: '80px'}} />
-            <img src={mtslLogo} alt="MTSL" style={{height: '80px'}} />
+          <div className="partner-logos-flex">
+            <img src={makerereLogo} alt="Makerere University" />
+            <img src={kccaLogo} alt="KCCA" />
+            <img src={mtslLogo} alt="MTSL" />
           </div>
         </div>
       </section>

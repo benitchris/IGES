@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SolutionsSection.css';
-import techImage from '../../assets/images/buyala-facility.JPG';
-import hubImage from '../../assets/images/dumpisite-with-people-on-site.JPG';
-import saccoImage from '../../assets/images/MTSL-people-talking-on-office.JPG';
+import techImage from '../../assets/images/buyala-facility.webp';
+import hubImage from '../../assets/images/dumpisite-with-people-on-site.webp';
+import saccoImage from '../../assets/images/MTSL-people-talking-on-office.webp';
 
 const SolutionsSection = () => {
   const cards = [

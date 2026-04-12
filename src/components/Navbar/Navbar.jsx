@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Navbar.css';
-import igesLogo from '../../assets/logos/IGES LOGO DRAFT141827022025.png';
+import igesLogo from '../../assets/logos/IGES LOGO DRAFT141827022025.webp';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SaccoSnippet.css';
-import saccoImg from '../../assets/images/MTSL-people-talking-on-office.JPG';
-import bwwLogo from '../../assets/logos/BWW LOGO DRAFT11122025.jpg';
+import saccoImg from '../../assets/images/MTSL-people-talking-on-office.webp';
+import bwwLogo from '../../assets/logos/BWW LOGO DRAFT11122025.webp';
 
 const SaccoSnippet = () => {
   return (

@@ -1,5 +1,7 @@
 import React from 'react';
-import techHero from '../assets/images/buyala-facility.JPG';
+import PageHero from '../components/PageHero/PageHero';
+import './Technology.css';
+import techHero from '../assets/images/buyala-facility.webp';
 
 const Technology = () => {
   const steps = [
@@ -18,15 +20,12 @@ const Technology = () => {
 
   return (
     <div className="tech-page">
-      <section className="internal-hero section bg-dark">
-        <div className="hero-overlay"></div>
-        <div className="container hero-content">
-             <h1 className="hero-title reveal">Hydrothermal Technology (HTT)</h1>
-             <p className="hero-subtitle reveal">
-                Transforming organic waste into high-value energy through advanced heat and pressure treatment systems.
-             </p>
-        </div>
-      </section>
+      <PageHero 
+        title="Hydrothermal Technology (HTT)"
+        subtitle="Transforming organic waste into high-value energy through advanced heat and pressure treatment systems."
+        backgroundImage={techHero}
+        accentText="Technology"
+      />
 
       <section className="how-it-works section">
         <div className="container">
@@ -34,13 +33,13 @@ const Technology = () => {
             <span className="section-subtitle">Process Flow</span>
             <h2 className="section-title">How It <span className="text-primary">Works</span></h2>
           </div>
-          <div className="steps-detailed" style={{maxWidth: '800px', margin: '0 auto'}}>
+          <div className="steps-detailed">
             {steps.map((s, i) => (
-              <div key={i} className="step-row" style={{display:'flex', alignItems:'flex-start', gap:'2rem', marginBottom:'3rem'}}>
-                 <div className="step-number-circle" style={{width:'40px', height:'40px', background:'var(--primary-green)', color:'#fff', borderRadius:'50%', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0, fontWeight:'bold'}}>{i+1}</div>
+              <div key={i} className="step-row reveal active">
+                 <div className="step-number-circle">{i+1}</div>
                  <div className="step-info">
-                    <h3 style={{marginBottom:'0.5rem'}}>{s.title}</h3>
-                    <p style={{color:'var(--text-muted)'}}>{s.desc}</p>
+                    <h3>{s.title}</h3>
+                    <p>{s.desc}</p>
                  </div>
               </div>
             ))}
@@ -55,12 +54,12 @@ const Technology = () => {
             <h2 className="section-title">Key <span className="text-energy">Benefits</span></h2>
           </div>
           <div className="news-grid">
-            {benefits.map((b, i) => (
-              <div key={i} className="premium-card">
-                 <h3 style={{color: 'var(--primary-green)', marginBottom: '1rem'}}>{b.title}</h3>
-                 <p style={{color:'var(--text-muted)'}}>{b.desc}</p>
-              </div>
-            ))}
+             {benefits.map((b, i) => (
+               <div key={i} className="premium-card reveal active">
+                  <h3>{b.title}</h3>
+                  <p>{b.desc}</p>
+               </div>
+             ))}
           </div>
         </div>
       </section>
@@ -69,10 +68,10 @@ const Technology = () => {
         <div className="container">
           <div className="research-box text-center">
              <h2 className="section-title">Research & <span className="text-primary">Case Studies</span></h2>
-             <p className="section-desc mb-lg" style={{maxWidth:'700px', margin:'0 auto 2rem'}}>Documents and publications detailing our technological impact and research findings.</p>
-             <div className="btn-group" style={{display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap'}}>
-                <button className="btn btn-outline" disabled>Download Whitepaper (Coming Soon)</button>
-                <button className="btn btn-outline" disabled>Research Summary (Coming Soon)</button>
+             <p className="section-desc mb-lg">Documents and publications detailing our technological impact and research findings.</p>
+             <div className="btn-group">
+                <button className="btn btn-outline" disabled>Download Whitepaper (Soon)</button>
+                <button className="btn btn-outline" disabled>Research Summary (Soon)</button>
              </div>
           </div>
         </div>

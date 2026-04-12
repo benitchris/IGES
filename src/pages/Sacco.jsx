@@ -1,5 +1,7 @@
 import React from 'react';
-import saccoHero from '../assets/images/MTSL-people-talking-on-office.JPG';
+import PageHero from '../components/PageHero/PageHero';
+import './Sacco.css';
+import saccoHero from '../assets/images/MTSL-people-talking-on-office.webp';
 
 const Sacco = () => {
   const steps = [
@@ -15,25 +17,24 @@ const Sacco = () => {
 
   return (
     <div className="sacco-page">
-      <section className="internal-hero section">
-        <div className="container">
-           <span className="section-subtitle">Buyala Waste Workers SACCO</span>
-           <h1 className="section-title">Financial <span className="text-energy">Empowerment</span></h1>
-           <p className="section-desc">Establishing a secure financial foundation for the backbone of our recycling initiatives.</p>
-        </div>
-      </section>
+      <PageHero 
+        title="Financial Empowerment"
+        subtitle="Establishing a secure financial foundation for the backbone of our recycling initiatives."
+        backgroundImage={saccoHero}
+        accentText="Financial"
+      />
 
       <section className="about-sacco section bg-light">
         <div className="container">
-           <div className="hub-grid">
-              <div className="hub-image">
-                 <img src={saccoHero} alt="SACCO community" style={{borderRadius:'40px', width:'100%'}} />
-              </div>
-              <div className="hub-text">
-                 <h2>Our Purpose</h2>
-                 <p>The Buyala Waste Workers SACCO was founded to solve the financial exclusion faced by many in the waste management sector. By pooling resources, we provide a safety net and growth opportunities for our members.</p>
-              </div>
-           </div>
+            <div className="hub-grid reveal active">
+               <div className="hub-image">
+                  <img src={saccoHero} alt="SACCO community" />
+               </div>
+               <div className="hub-text">
+                  <h2 className="section-title left-align">Our Purpose</h2>
+                  <p>The Buyala Waste Workers SACCO was founded to solve the financial exclusion faced by many in the waste management sector. By pooling resources, we provide a safety net and growth opportunities for our members.</p>
+               </div>
+            </div>
         </div>
       </section>
 
@@ -43,15 +44,15 @@ const Sacco = () => {
              <span className="section-subtitle">Membership Flow</span>
              <h2 className="section-title">How It <span className="text-primary">Works</span></h2>
           </div>
-          <div className="news-grid">
-             {steps.map((s, i) => (
-                <div key={i} className="premium-card text-center">
-                   <div className="step-badge" style={{marginBottom:'1rem', display:'inline-block'}}>Step {i+1}</div>
-                   <h3>{s.title}</h3>
-                   <p>{s.desc}</p>
-                </div>
-             ))}
-          </div>
+           <div className="news-grid">
+              {steps.map((s, i) => (
+                 <div key={i} className="premium-card text-center reveal active">
+                    <div className="step-badge">Step {i+1}</div>
+                    <h3>{s.title}</h3>
+                    <p>{s.desc}</p>
+                 </div>
+              ))}
+           </div>
         </div>
       </section>
 
@@ -61,22 +62,22 @@ const Sacco = () => {
               <span className="section-subtitle">Trust & Reports</span>
               <h2 className="section-title">Financial <span className="text-primary">Transparency</span></h2>
            </div>
-           <div className="stats-grid">
-              <div className="premium-card">
-                 <h4>Savings Growth</h4>
-                 <div style={{height:'10px', background:'var(--border-color)', borderRadius:'5px', marginTop:'1rem', overflow:'hidden'}}>
-                    <div style={{width:'75%', height:'100%', background:'var(--primary-green)'}}></div>
-                 </div>
-                 <p style={{marginTop:'0.5rem', fontSize:'0.8rem'}}>75% increase in annual savings pool</p>
-              </div>
-              <div className="premium-card">
-                 <h4>Loan Usage</h4>
-                 <div style={{height:'10px', background:'var(--border-color)', borderRadius:'5px', marginTop:'1rem', overflow:'hidden'}}>
-                    <div style={{width:'60%', height:'100%', background:'var(--energy-orange)'}}></div>
-                 </div>
-                 <p style={{marginTop:'0.5rem', fontSize:'0.8rem'}}>60% of loans used for small business expansion</p>
-              </div>
-           </div>
+            <div className="stats-grid">
+               <div className="premium-card reveal active">
+                  <h4>Savings Growth</h4>
+                  <div className="progress-bar">
+                     <div className="progress-fill green" style={{width:'75%'}}></div>
+                  </div>
+                  <p className="stat-desc">75% increase in annual savings pool</p>
+               </div>
+               <div className="premium-card reveal active">
+                  <h4>Loan Usage</h4>
+                  <div className="progress-bar">
+                     <div className="progress-fill orange" style={{width:'60%'}}></div>
+                  </div>
+                  <p className="stat-desc">60% of loans used for small business expansion</p>
+               </div>
+            </div>
         </div>
       </section>
 
@@ -86,14 +87,14 @@ const Sacco = () => {
              <span className="section-subtitle">Success Stories</span>
              <h2 className="section-title">Member <span className="text-primary">Testimonials</span></h2>
           </div>
-          <div className="news-grid">
-             {testimonials.map((t, i) => (
-                <div key={i} className="premium-card" style={{fontStyle:'italic'}}>
-                   <p>"{t.text}"</p>
-                   <p style={{marginTop:'1.5rem', fontWeight:'bold', fontStyle:'normal'}}>— {t.name}</p>
-                </div>
-             ))}
-          </div>
+           <div className="news-grid">
+              {testimonials.map((t, i) => (
+                 <div key={i} className="premium-card testimonial-card reveal active">
+                    <p className="quote">"{t.text}"</p>
+                    <p className="author">— {t.name}</p>
+                 </div>
+              ))}
+           </div>
         </div>
       </section>
 

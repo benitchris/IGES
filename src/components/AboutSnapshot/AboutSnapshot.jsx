@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './AboutSnapshot.css';
-import kccaImage from '../../assets/images/kcca-people-visit-at-dumpsite.JPG';
+import kccaImage from '../../assets/images/kcca-people-visit-at-dumpsite.webp';
 
 const AboutSnapshot = () => {
   return (

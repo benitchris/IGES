@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import igesLogo from '../../assets/logos/IGES LOGO DRAFT141827022025.png';
-import kccaLogo from '../../assets/logos/kcca-logo.png';
+import igesLogo from '../../assets/logos/IGES LOGO DRAFT141827022025.webp';
+import kccaLogo from '../../assets/logos/kcca-logo.webp';
 import makerereLogo from '../../assets/logos/makerere-logo.svg';
-import mtslLogo from '../../assets/logos/mtsl-logo.png';
+import mtslLogo from '../../assets/logos/mtsl-logo.webp';
 
 const Footer = () => {
   return (

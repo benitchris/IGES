@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NewsSnippet.css';
-import newsImg from '../../assets/images/on-dumbiste-visit-explanation.JPG';
+import newsImg from '../../assets/images/on-dumbiste-visit-explanation.webp';
 
 const NewsSnippet = () => {
   const posts = [

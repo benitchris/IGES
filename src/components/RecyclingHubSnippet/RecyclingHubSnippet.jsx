@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './RecyclingHubSnippet.css';
-import hubImg from '../../assets/images/kcca-people-visit-at-dumpsite.JPG';
+import hubImg from '../../assets/images/kcca-people-visit-at-dumpsite.webp';
 
 const RecyclingHubSnippet = () => {
   return (

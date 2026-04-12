@@ -1,7 +1,7 @@
 import React from 'react';
 import './PartnerLogos.css';
-import igesLogo from '../../assets/logos/IGES LOGO DRAFT141827022025.png';
-import kccaLogo from '../../assets/logos/kcca-logo.png';
+import igesLogo from '../../assets/logos/IGES LOGO DRAFT141827022025.webp';
+import kccaLogo from '../../assets/logos/kcca-logo.webp';
 import makerereLogoSrc from '../../assets/logos/makerere-logo.svg';
 
 const PartnerLogos = () => {

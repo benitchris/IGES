@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SaccoSection.css';
-import saccoGroup from '../../assets/images/MTSL-people-talking-on-office.JPG';
+import saccoGroup from '../../assets/images/MTSL-people-talking-on-office.webp';
 
 const SaccoSection = () => {
   return (
