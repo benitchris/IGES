@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import buyalaFacility from '../../assets/images/buyala-facility.webp';
+import landingHero from '../../assets/images/landing-page-hero.webp';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -18,7 +18,7 @@ const Hero = () => {
       id="home" 
       style={{ 
         backgroundPosition: `center ${scrollY * 0.5}px`,
-        backgroundImage: `url(${buyalaFacility})` 
+        backgroundImage: `url(${landingHero})` 
       }}
     >
       <div className="hero-overlay"></div>

@@ -5,9 +5,19 @@ import hubHero from '../assets/images/dumpisite-with-people-on-site.webp';
 import img1 from '../assets/images/dumpsite-1.webp';
 import img2 from '../assets/images/dumpsite-2.webp';
 import img3 from '../assets/images/kcca-people-visit-at-dumpsite.webp';
+import newImg1 from '../assets/images/dumpsite-gallery-1.webp';
+import newImg2 from '../assets/images/waste-management-action.webp';
+import newImg3 from '../assets/images/landing-page-hero.webp';
 
 const RecyclingHub = () => {
-  const images = [img1, img2, img3];
+  const images = [
+    { src: newImg1, alt: "Sorting operations at the hub", category: "Operations" },
+    { src: img3, alt: "Stakeholders meeting and collaboration", category: "Community" },
+    { src: newImg2, alt: "Waste management lifecycle action", category: "Action" },
+    { src: img1, alt: "Initial site sorting and organization", category: "Site" },
+    { src: newImg3, alt: "The vision for sustainable energy transformation", category: "Vision" },
+    { src: img2, alt: "Resource recovery and recycling flow", category: "Process" }
+  ];
 
   return (
     <div className="hub-page">
@@ -75,7 +85,11 @@ const RecyclingHub = () => {
            <div className="gallery-layout-grid">
               {images.map((img, i) => (
                  <div key={i} className="gallery-item reveal active">
-                    <img src={img} alt={`Hub Gallery ${i+1}`} />
+                    <img src={img.src} alt={img.alt} />
+                    <div className="gallery-overlay">
+                       <span className="gallery-category">{img.category}</span>
+                       <p className="gallery-caption">{img.alt}</p>
+                    </div>
                  </div>
               ))}
            </div>
