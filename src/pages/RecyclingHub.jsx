@@ -6,16 +6,22 @@ import img1 from '../assets/images/dumpsite-1.webp';
 import img2 from '../assets/images/dumpsite-2.webp';
 import img3 from '../assets/images/kcca-people-visit-at-dumpsite.webp';
 import newImg1 from '../assets/images/dumpsite-gallery-1.webp';
-import newImg2 from '../assets/images/waste-management-action.webp';
 import newImg3 from '../assets/images/landing-page-hero.webp';
+import officeImg from '../assets/images/MTSL-people-talking-on-office.webp';
+import facilityImg from '../assets/images/buyala-facility.webp';
+import visitImg from '../assets/images/kcca-people-visit-at-dumpsite-2.webp';
+import explanationImg from '../assets/images/on-dumbiste-visit-explanation.webp';
 
 const RecyclingHub = () => {
   const images = [
     { src: newImg1, alt: "Sorting operations at the hub", category: "Operations" },
     { src: img3, alt: "Stakeholders meeting and collaboration", category: "Community" },
-    { src: newImg2, alt: "Waste management lifecycle action", category: "Action" },
+    { src: facilityImg, alt: "Our state-of-the-art waste processing facility", category: "Facility" },
     { src: img1, alt: "Initial site sorting and organization", category: "Site" },
+    { src: visitImg, alt: "Institutional visits and site inspections", category: "Collaboration" },
     { src: newImg3, alt: "The vision for sustainable energy transformation", category: "Vision" },
+    { src: explanationImg, alt: "On-site knowledge sharing and technical briefing", category: "Education" },
+    { src: officeImg, alt: "MTSL team strategic planning and coordination", category: "Strategy" },
     { src: img2, alt: "Resource recovery and recycling flow", category: "Process" }
   ];
 
