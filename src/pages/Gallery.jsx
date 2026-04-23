@@ -13,7 +13,6 @@ import kccaVisit2Img from '../assets/images/kcca-people-visit-at-dumpsite-2.webp
 import kccaVisit1Img from '../assets/images/kcca-people-visit-at-dumpsite.webp';
 import landingHeroImg from '../assets/images/landing-page-hero.webp';
 import explanationImg from '../assets/images/on-dumbiste-visit-explanation.webp';
-import actionImg from '../assets/images/waste-management-action.webp';
 
 const Gallery = () => {
   const galleryItems = [
@@ -27,7 +26,6 @@ const Gallery = () => {
     { src: kccaVisit2Img, alt: "Government Stakeholder Inspection", category: "Collaboration", size: "tall" },
     { src: explanationImg, alt: "Technical Briefing and Education", category: "Training", size: "wide" },
     { src: dumpsite2Img, alt: "Material Recovery and Flow", category: "Process", size: "medium" },
-    { src: actionImg, alt: "Waste Management in Action", category: "Impact", size: "medium" }
   ];
 
   return (
