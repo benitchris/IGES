@@ -23,6 +23,7 @@ const Navbar = () => {
     { to: '/about', label: 'About Us' },
     { to: '/technology', label: 'Technology' },
     { to: '/recycling', label: 'Recycling Hub' },
+    { to: '/gallery', label: 'Gallery' },
     { to: '/sacco', label: 'SACCO' },
     { to: '/news', label: 'News' },
     { to: '/contact', label: 'Contact' },

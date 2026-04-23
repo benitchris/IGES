@@ -9,6 +9,7 @@ import RecyclingHub from './pages/RecyclingHub'
 import Sacco from './pages/Sacco'
 import News from './pages/News'
 import Contact from './pages/Contact'
+import Gallery from './pages/Gallery'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="/sacco" element={<Sacco />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </main>
       <Footer />
