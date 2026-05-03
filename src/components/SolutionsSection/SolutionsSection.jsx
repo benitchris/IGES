@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SolutionsSection.css';
 import techImage from '../../assets/images/buyala-facility.webp';
-import hubImage from '../../assets/images/dumpisite-with-people-on-site.webp';
-import saccoImage from '../../assets/images/MTSL-people-talking-on-office.webp';
+import hubImage from '../../assets/images/plastic-bottles.webp';
+import saccoImage from '../../assets/images/sacco-office.webp';
 
 const SolutionsSection = () => {
   const cards = [

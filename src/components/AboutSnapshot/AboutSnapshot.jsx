@@ -12,7 +12,7 @@ const AboutSnapshot = () => {
             <img src={kccaImage} alt="IGES team at dumpsite" className="img-main" />
             <div className="image-accent-box"></div>
             <div className="experience-badge">
-              <span className="years">10+</span>
+              <span className="years">2+</span>
               <span className="text">Years of <br />Innovation</span>
             </div>
           </div>

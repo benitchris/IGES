@@ -1,7 +1,8 @@
 import React from 'react';
 import PageHero from '../components/PageHero/PageHero';
 import './Sacco.css';
-import saccoHero from '../assets/images/MTSL-people-talking-on-office.webp';
+import meetingSignings from '../assets/images/meetingsignings.webp';
+import saccoMeeting from '../assets/images/sacco-meeting.webp';
 
 const Sacco = () => {
   const steps = [
@@ -20,7 +21,7 @@ const Sacco = () => {
       <PageHero 
         title="Financial Empowerment"
         subtitle="Establishing a secure financial foundation for the backbone of our recycling initiatives."
-        backgroundImage={saccoHero}
+        backgroundImage={saccoMeeting}
         accentText="Financial"
       />
 
@@ -28,7 +29,7 @@ const Sacco = () => {
         <div className="container">
             <div className="hub-grid reveal active">
                <div className="hub-image">
-                  <img src={saccoHero} alt="SACCO community" />
+                  <img src={meetingSignings} alt="SACCO community" />
                </div>
                <div className="hub-text">
                   <h2 className="section-title left-align">Our Purpose</h2>
