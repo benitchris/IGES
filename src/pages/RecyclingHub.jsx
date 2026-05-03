@@ -2,7 +2,7 @@ import React from 'react';
 import PageHero from '../components/PageHero/PageHero';
 import './RecyclingHub.css';
 import hubHero from '../assets/images/dumpisite-with-people-on-site.webp';
-import img3 from '../assets/images/kcca-people-visit-at-dumpsite.webp';
+import img3 from '../assets/images/kavera.webp';
 
 const RecyclingHub = () => {
 
