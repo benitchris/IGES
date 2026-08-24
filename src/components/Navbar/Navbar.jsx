@@ -21,6 +21,7 @@ const Navbar = () => {
   const navLinks = [
     { to: '/', label: 'Home', end: true },
     { to: '/about', label: 'About Us' },
+    { to: '/waste-services', label: 'Waste Services' },
     { to: '/technology', label: 'Technology' },
     { to: '/recycling', label: 'Recycling Hub' },
     { to: '/gallery', label: 'Gallery' },

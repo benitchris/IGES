@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import WasteServices from './pages/WasteServices'
 import Technology from './pages/Technology'
 import RecyclingHub from './pages/RecyclingHub'
 import Sacco from './pages/Sacco'
@@ -43,6 +44,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/waste-services" element={<WasteServices />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/recycling" element={<RecyclingHub />} />
           <Route path="/sacco" element={<Sacco />} />
