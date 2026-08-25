@@ -4,7 +4,7 @@ import './WasteServices.css';
 
 // Import local assets
 import heroBg from '../assets/images/dumpsite-1.webp';
-import bannerImg from '../assets/images/waste-services-banner.jpg';
+
 import jointLogoImg from '../assets/logos/waste-services-logo.jpg';
 import mtslLogoImg from '../assets/logos/mtsl-logo.webp';
 
@@ -76,36 +76,7 @@ const WasteServices = () => {
         accentText="Services"
       />
 
-      {/* INTRO IDENTITY BANNER */}
-      <section className="intro-banner-section section bg-soft">
-        <div className="container">
-          <div className="banner-display-card reveal active">
-            <div className="banner-image-container">
-              <img 
-                src={bannerImg} 
-                alt="IGES Waste Services" 
-                className="corporate-banner-img"
-              />
-              <div className="banner-bezel-glow"></div>
-            </div>
-            
-            <div className="banner-info-footer">
-              <div className="footer-tag">Official Joint Venture Identity</div>
-              <div className="footer-links">
-                <a href="mailto:info@iws.iges.ug" className="footer-link-pill">
-                  <span>✉</span> info@iws.iges.ug
-                </a>
-                <a href="tel:+256770477720" className="footer-link-pill">
-                  <span>📞</span> +256 770 477 720
-                </a>
-                <a href="tel:+256750000000" className="footer-link-pill">
-                  <span>📞</span> +256 750 000 000
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* JOINT VENTURE SECTION */}
       <section className="jv-section section">
