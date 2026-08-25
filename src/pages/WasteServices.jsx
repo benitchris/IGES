@@ -1,51 +1,106 @@
 import React from 'react';
+import PageHero from '../components/PageHero/PageHero';
 import './WasteServices.css';
 
 // Import local assets
+import heroBg from '../assets/images/dumpsite-1.webp';
 import bannerImg from '../assets/images/waste-services-banner.jpg';
-import collectionImg from '../assets/images/waste-collection-workers.jpg';
-import facilityImg from '../assets/images/waste-truck-facility.jpg';
 import jointLogoImg from '../assets/logos/waste-services-logo.jpg';
 import mtslLogoImg from '../assets/logos/mtsl-logo.webp';
 
+// Service Card Images
+import residentialImg from '../assets/images/waste-collection-workers.jpg';
+import commercialImg from '../assets/images/trash.webp';
+import institutionalImg from '../assets/images/plastic-bottles.webp';
+import transportImg from '../assets/images/waste-truck-facility.jpg';
+import cleaningImg from '../assets/images/aftermeeting.webp';
+import industrialImg from '../assets/images/plastic.webp';
+import drainageImg from '../assets/images/kavera.webp';
+import partnershipImg from '../assets/images/buyala-facility.webp';
+
 const WasteServices = () => {
+  // Service Groups
+  const collectionServices = [
+    {
+      title: 'Regular Scheduled Residential Collection',
+      image: residentialImg,
+      desc: 'Dependable, scheduled collection services for households, estates, and residential neighborhoods to keep our living areas clean and healthy.'
+    },
+    {
+      title: 'Commercial & Office Waste Removal',
+      image: commercialImg,
+      desc: 'Customized waste management plans, dumpsters, and collections for businesses, retail centers, and office spaces.'
+    },
+    {
+      title: 'Segregated Waste Pickups for Institutions',
+      image: institutionalImg,
+      desc: 'Specialized, segregated collections for schools, universities, hospitals, and other large public or private organizations.'
+    },
+    {
+      title: 'Environmentally Safe Transport Protocols',
+      image: transportImg,
+      desc: 'Secure, sealed, and reliable transportation of waste to treatment facilities, preventing leaks and secondary pollution.'
+    }
+  ];
+
+  const environmentalServices = [
+    {
+      title: 'Institutional Cleaning & Floor Care',
+      image: cleaningImg,
+      desc: 'High-grade commercial cleaning, sanitation, and floor maintenance tailored for public spaces, offices, and large halls.'
+    },
+    {
+      title: 'Industrial Site Sanitation & Sorting Support',
+      image: industrialImg,
+      desc: 'Comprehensive industrial waste solutions, on-site sanitation, and material segregation assistance for manufacturing plants.'
+    },
+    {
+      title: 'Drainage Cleaning & Neighborhood Cleanups',
+      image: drainageImg,
+      desc: 'Active intervention in community hygiene, clearing drainage systems, and organizing local cleanups to prevent flooding and disease.'
+    },
+    {
+      title: 'Processing Partnership with Buyala Facilities',
+      image: partnershipImg,
+      desc: 'Integration with Buyala Solid Waste Management Facility to ensure organic and recyclable waste is processed sustainably.'
+    }
+  ];
+
   return (
     <div className="waste-services-page">
-      {/* HERO SECTION */}
-      <section className="waste-hero section-bg-glow">
+      {/* PAGE HERO */}
+      <PageHero 
+        title="Waste Services"
+        subtitle="Reliable, efficient, and environmentally responsible waste management and cleaning solutions."
+        backgroundImage={heroBg}
+        accentText="Services"
+      />
+
+      {/* INTRO IDENTITY BANNER */}
+      <section className="intro-banner-section section bg-soft">
         <div className="container">
-          <div className="hero-grid">
-            <div className="hero-text-content reveal active">
-              <span className="badge-tag">Joint Venture Initiative</span>
-              <h1 className="main-title">
-                Waste <span className="highlight-text">Services</span>
-              </h1>
-              <p className="hero-lead">
-                Reliable, efficient, and environmentally responsible waste management and cleaning solutions 
-                tailored to households, businesses, and institutions.
-              </p>
-              
-              <div className="quick-contacts">
-                <a href="mailto:info@iws.iges.ug" className="contact-pill">
-                  <span className="icon">✉</span> info@iws.iges.ug
-                </a>
-                <a href="tel:+256770477720" className="contact-pill">
-                  <span className="icon">📞</span> +256 770 477 720
-                </a>
-                <a href="tel:+256750000000" className="contact-pill">
-                  <span className="icon">📞</span> +256 750 000 000
-                </a>
-              </div>
+          <div className="banner-display-card reveal active">
+            <div className="banner-image-container">
+              <img 
+                src={bannerImg} 
+                alt="IGES Waste Services" 
+                className="corporate-banner-img"
+              />
+              <div className="banner-bezel-glow"></div>
             </div>
             
-            <div className="hero-banner-container reveal active">
-              <div className="banner-wrapper">
-                <img 
-                  src={bannerImg} 
-                  alt="IGES Waste Services Banner" 
-                  className="banner-image"
-                />
-                <div className="banner-overlay-glow"></div>
+            <div className="banner-info-footer">
+              <div className="footer-tag">Official Joint Venture Identity</div>
+              <div className="footer-links">
+                <a href="mailto:info@iws.iges.ug" className="footer-link-pill">
+                  <span>✉</span> info@iws.iges.ug
+                </a>
+                <a href="tel:+256770477720" className="footer-link-pill">
+                  <span>📞</span> +256 770 477 720
+                </a>
+                <a href="tel:+256750000000" className="footer-link-pill">
+                  <span>📞</span> +256 750 000 000
+                </a>
               </div>
             </div>
           </div>
@@ -59,8 +114,8 @@ const WasteServices = () => {
             <span className="section-subtitle">Synergy & Partnership</span>
             <h2 className="section-title">A Strategic <span className="text-secondary">Joint Venture</span></h2>
             <p className="section-desc max-w-md mx-auto">
-              IGES Waste Services is built on a strong partnership, combining professional expertise, 
-              efficient logistics, and advanced technological solutions.
+              IGES Waste Services is established to combine professional expertise, efficient logistics, 
+              and advanced technological solutions.
             </p>
           </div>
 
@@ -107,7 +162,7 @@ const WasteServices = () => {
                 rel="noopener noreferrer" 
                 className="partner-link-btn btn-outline btn"
               >
-                Visit Deers Mart uganda ↗
+                Visit Deers Mart Uganda ↗
               </a>
             </div>
           </div>
@@ -130,66 +185,53 @@ const WasteServices = () => {
         </div>
       </section>
 
-      {/* CORE SERVICES */}
+      {/* CORE SERVICES SECTION */}
       <section className="services-section section bg-soft">
         <div className="container">
           <div className="text-center mb-lg">
-            <span className="section-subtitle">What We Do</span>
-            <h2 className="section-title">Our Core <span className="text-orange">Services</span></h2>
+            <span className="section-subtitle">Our Operations</span>
+            <h2 className="section-title">Waste Collection & <span className="text-primary">Logistics</span></h2>
+            <p className="section-desc max-w-md mx-auto">
+              Our core collection services are tailored to meet the needs of households, businesses, and institutions.
+            </p>
           </div>
 
-          <div className="services-grid">
-            {/* Service 1 */}
-            <div className="service-showcase-card premium-card reveal active">
-              <div className="service-image-box">
-                <img 
-                  src={collectionImg} 
-                  alt="Waste collection workers in action" 
-                  className="service-img" 
-                />
+          <div className="services-grid-8 mb-lg">
+            {collectionServices.map((service, index) => (
+              <div key={index} className="service-card-premium premium-card reveal active">
+                <div className="card-image-box">
+                  <img src={service.image} alt={service.title} className="card-img" />
+                  <div className="card-number">0{index + 1}</div>
+                </div>
+                <div className="card-content-box">
+                  <h3>{service.title}</h3>
+                  <p>{service.desc}</p>
+                </div>
               </div>
-              <div className="service-content">
-                <span className="service-num">01</span>
-                <h3>Waste Collection & Transportation</h3>
-                <p>
-                  We provide structured waste collection schedules tailored to meet the dynamic needs of households, 
-                  businesses, institutions, and community zones. Equipped with modern compactor trucks, 
-                  our professional teams ensure timely, hygienic, and reliable waste retrieval.
-                </p>
-                <ul className="service-features">
-                  <li>Regular scheduled residential collection</li>
-                  <li>Commercial & office waste removal</li>
-                  <li>Segregated waste pickups for institutions</li>
-                  <li>Environmentally safe transport protocols</li>
-                </ul>
-              </div>
-            </div>
+            ))}
+          </div>
 
-            {/* Service 2 */}
-            <div className="service-showcase-card premium-card reveal active">
-              <div className="service-image-box">
-                <img 
-                  src={facilityImg} 
-                  alt="IGES Waste Service truck at Buyala Facility" 
-                  className="service-img" 
-                />
+          <div className="text-center mb-lg mt-xl">
+            <span className="section-subtitle">Sanitation Services</span>
+            <h2 className="section-title">Cleaning & <span className="text-orange">Environmental Solutions</span></h2>
+            <p className="section-desc max-w-md mx-auto">
+              A range of related cleaning and environmental support systems designed to create healthier neighborhoods.
+            </p>
+          </div>
+
+          <div className="services-grid-8">
+            {environmentalServices.map((service, index) => (
+              <div key={index} className="service-card-premium premium-card reveal active">
+                <div className="card-image-box">
+                  <img src={service.image} alt={service.title} className="card-img" />
+                  <div className="card-number">0{index + 5}</div>
+                </div>
+                <div className="card-content-box">
+                  <h3>{service.title}</h3>
+                  <p>{service.desc}</p>
+                </div>
               </div>
-              <div className="service-content">
-                <span className="service-num">02</span>
-                <h3>Cleaning & Environmental Services</h3>
-                <p>
-                  Beyond collection, we deliver a range of environmental management and sanitization 
-                  solutions. From post-event cleaning to municipal sanitization, we keep public spaces 
-                  clean and hazard-free, supported by our operations based at the Buyala Solid Waste Management Facility.
-                </p>
-                <ul className="service-features">
-                  <li>Institutional cleaning & floor care</li>
-                  <li>Industrial site sanitation & sorting support</li>
-                  <li>Drainage cleaning and neighborhood cleanups</li>
-                  <li>Processing partnership with Buyala facilities</li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
